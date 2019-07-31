@@ -1,0 +1,42 @@
+
+h1 {
+        font-size: 25pt;
+        color: royalblue;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        font-family: Garamond;
+        text-align: -moz-center;
+    }
+
+
+body {
+    background-color: snow;
+    color: #0000;
+    font-family: "Garamond";
+    text-align: -moz-center;
+    display: block;
+    margin: 30px;
+}
+
+
+label {
+
+    text-align: -moz-center;
+    font-size: 16pt;
+    font-family: "Times New Roman";
+    color: black;
+    margin-bottom: 15px;
+    text-decoration: underline;
+
+}
+
+
+@media (max-width: 1000px) {
+    body {background-color: lightgrey }
+
+}
+
+@media (max-width: 500px) {
+    body {background-color: darkgrey}
+
+}

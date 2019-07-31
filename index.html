@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Validation</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/style_form.css"/>
+
+    <script src="checkNumber.js"></script>
+
+</head>
+<body>
+<h1> Validate your Credit Card! </h1>
+<form action="/credit-card" method="post">
+
+    <div>
+        <label> Credit Card Number: </label>
+        <!-- American Express, Visa, Mastercard Credit regex expressions -->
+
+        <input type="text"
+               pattern="[0-9]{13,16}"
+               id="Credit card Number:"
+               placeholder="XXXXXXXXXXXX"
+               name="credit_card"
+               required maxlength="20"
+               minlength="13" size="20"
+               oninput="validateNum(this);">
+        <!--
+        <input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number" name="card-number">
+        -->
+    </div>
+    <div>
+        <label> With Input Mask: </label>
+        <input type="text"
+               id="inputmask"
+               name="input_mask"
+               placeholder="XXXX XXXX XXXX XXXX"
+               required maxlength="20"
+               minlength="11"
+               oninput="validateNum(this);">
+
+    </div>
+
+    <div>
+        <input type="submit" id="Submit">
+    </div>
+</form>
+
+</body>
+</html>
